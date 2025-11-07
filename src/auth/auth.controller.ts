@@ -7,6 +7,6 @@ export class AuthController {
   constructor(private readonly authservice: AuthService) {}
   @Post('login')
   login(@Body() loginDto: LoginDto) {
-    return this.authservice.dologin(loginDto);
+    return this.authservice.login(loginDto);
   }
 }

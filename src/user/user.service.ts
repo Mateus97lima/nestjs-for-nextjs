@@ -34,9 +34,15 @@ export class UserService {
     const created = this.userRepository.create(newUser);
     await this.userRepository.save(created);
   }
+
   findByEmail(email: string) {
     return this.userRepository.findOneBy({ email });
   }
+
+  findById(id: string) {
+    return this.userRepository.findOneBy({ id });
+  }
+
   save(user: User) {
     return this.userRepository.save(user);
   }

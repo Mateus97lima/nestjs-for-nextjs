@@ -9,7 +9,7 @@ POST  {{baseUrl}}/auth/login
 Content-Type: application/json
 
 {
-  "email":"user@email.com",
+  "email":"Mateus@email.com",
   "password":"12345"
 
 }
@@ -20,11 +20,23 @@ POST  {{baseUrl}}/user
 Content-Type: application/json
 
 {
-  "name":"mateus",
-  "email":"user@email.com",
+  "name":"Mateus",
+  "email":"Mateus@email.com",
   "password":"12345"
 
 }
+
+### Uptade User
+# @name UptadeUser
+PATCH {{baseUrl}}/user/me
+Content-Type: application/json
+Authorization: Bearer {{jwtToken}}
+
+{
+"name":"Mateus",
+"email":"Mateu1s@emai.com"
+}
+
 
 ### Read one user //ler um úsuario
 # @name readOneUser

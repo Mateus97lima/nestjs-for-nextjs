@@ -10,7 +10,7 @@ Content-Type: application/json
 
 {
   "email":"Mateus@email.com",
-  "password":"12345"
+  "password":"123456"
 
 }
 
@@ -22,7 +22,7 @@ Content-Type: application/json
 {
   "name":"Mateus",
   "email":"Mateus@email.com",
-  "password":"12345"
+  "password":"123456"
 
 }
 
@@ -37,10 +37,32 @@ Authorization: Bearer {{jwtToken}}
 "email":"Mateu1s@emai.com"
 }
 
+### Uptade User password
+# @name UptadeUserPassword
+PATCH {{baseUrl}}/user/me/password
+Content-Type: application/json
+Authorization: Bearer {{jwtToken}}
+
+{
+"currentPassword":"123456",
+"newPassword":"12345678c8868"
+}
+
+
+
+### User Delete
+# @name UserDelete
+DELETE  {{baseUrl}}/user/me/
+Authorization: Bearer {{jwtToken}}
+
+{
+"currentPassword":"123456",
+"newPassword":"12345678c8868"
+}
 
 ### Read one user //ler um úsuario
 # @name readOneUser
-GET  {{baseUrl}}/user/123
+GET  {{baseUrl}}/user/me
 Authorization: Bearer {{jwtToken}}
 
 

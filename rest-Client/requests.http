@@ -9,7 +9,7 @@ POST  {{baseUrl}}/auth/login
 Content-Type: application/json
 
 {
-  "email":"Mateus@email.com",
+  "email":"Mateusf@email.com",
   "password":"123456"
 
 }
@@ -21,7 +21,7 @@ Content-Type: application/json
 
 {
   "name":"Mateus",
-  "email":"Mateus@email.com",
+  "email":"Mateusf@email.com",
   "password":"123456"
 
 }
@@ -33,7 +33,7 @@ Content-Type: application/json
 Authorization: Bearer {{jwtToken}}
 
 {
-"name":"Mateus",
+"name":"Mateusf",
 "email":"Mateu1s@emai.com"
 }
 
@@ -45,7 +45,7 @@ Authorization: Bearer {{jwtToken}}
 
 {
 "currentPassword":"123456",
-"newPassword":"12345678c8868"
+"newPassword":"123456"
 }
 
 

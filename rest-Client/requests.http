@@ -134,10 +134,10 @@ Authorization: Bearer {{jwtToken}}
 Content-Type: multipart/form-data; boundary=----FormBoundary
 
 ------FormBoundary
-Content-Disposition: form-data; name="file"; filename="imagem.jpeg"
-Content-Type: image/jpeg
+Content-Disposition: form-data; name="file"; filename="imagem.png"
+Content-Type: image/png
 
-< ../dev/images/sample-image.jpeg
+< ../dev/images/image.png
 ------FormBoundary--
 
 ### Read Image
